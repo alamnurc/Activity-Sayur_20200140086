@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pembelian</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <h2 style="font-family:helvetica;">Struk Belanja Sayur</h1>
+        <hr>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td><b>Nama Sayur</b></td>
+                    <td><b th:text="${varsayur}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Harga Perkilo</b></td>
+                    <td><b th:text= Rp. ></b><b th:text="${varharga}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Berat</b></td>
+                    <td><b th:text="${varjumlah}"></b> <b>kg</b> </td>
+                </tr>
+                <tr>
+                    <td><b>Harga Awal</b></td>
+                    <td><b th:text= Rp. ></b> <b th:text="${totalawal}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Diskon</b></td>
+                    <td><b th:text ="${discountpercentage}"></b>%</td>
+                </tr>
+                <tr>
+                    <td><b>Total Harga Diskon</b></td>
+                    <td><b th:text= Rp. ></b> <b th:text="${discountprice}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Total Bayar</b></td>
+                    <td><b th:text= Rp. ></b> <b th:text="${vartotal}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Uang Bayar</b></td>
+                    <td><b th:text= Rp. ></b> <b th:text="${bayar}"></b></td>
+                </tr>                     
+                <tr>
+                    <td><b>Keterangan</b></td>
+                    <td><b th:text="${ket}"</b></td>
+                </tr>                     
+            </tbody>
+        </table>
+    </body>
+</html>
